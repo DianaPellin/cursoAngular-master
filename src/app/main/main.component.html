@@ -1,0 +1,5 @@
+<app-navbar (filterOutput)="getFilter($event)"></app-navbar>
+<app-anuncio-list [filter]="filter"></app-anuncio-list>
+
+<!-- Sempre que passamos um elemento de filho para pai,
+utilizamos um OUTPUT-->

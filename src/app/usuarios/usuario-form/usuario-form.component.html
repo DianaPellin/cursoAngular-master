@@ -1,0 +1,36 @@
+<div class="container">
+  <form [formGroup]="usuarioForm" class="row" (submit)="salvarUsuario()">
+    <div class="card">
+      <div class="card-body">
+        <h2 style="text-align: center">###CADASTRO DE USUÁRIOS###</h2>
+        <div class="row mt-3">
+          <div class="col-4">
+            <label>Digite seu nome completo: </label>
+            <input formControlName="nome" class="form-control" placeholder="Nome">
+          </div>
+          <div class="col-4">
+            <label>Insira sua data de nascimento: </label>
+            <input formControlName="dataNasc" class="form-control" type="date">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-5">
+            <label>Digite um email válido: </label>
+            <input formControlName="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-5">
+            <label>Escolha sua senha: </label>
+            <input formControlName="senha" class="form-control" placeholder="Senha" type="password">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 mt-4">
+            <button class="btn btn-outline-primary" type="submit"> Salvar </button>
+            <button class="btn btn-outline-dark" type="reset" style="margin-left: 7px"> Resetar Form </button>
+            <a href="main.ts" class="btn btn-danger" type="button" style="margin-left: 7px">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

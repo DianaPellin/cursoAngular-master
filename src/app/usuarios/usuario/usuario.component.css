@@ -1,0 +1,24 @@
+.circle {
+  border-radius: 75%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 7px solid blanchedalmond;
+}
+
+.circle img {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+img {
+   shape-image-threshold: circle;
+ }
+
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
